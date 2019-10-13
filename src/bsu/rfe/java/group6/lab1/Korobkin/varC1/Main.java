@@ -41,10 +41,10 @@ public class Main {
 			}   
 		}
 		catch(ClassNotFoundException err){
-			System.out.println("Класс не найден."+err);
+			System.out.println("РєР»Р°СЃСЃ РЅРµ РЅР°Р№РґРµРЅ."+err);
 		}
 		catch(NoSuchMethodException err){
-			System.out.println("Метод не найден.");
+			System.out.println("РјРµС‚РѕРґ РЅРµ РЅР°Р№РґРµРЅ.");
 		}
 		if(sort) {
 			Arrays.sort(breakfast, new Comparator<Object>() {
@@ -60,13 +60,13 @@ public class Main {
 		}
 
 		int iCalories = 0;
-		System.out.println("Ваш завтрак:");
+		System.out.println("Р’Р°С€ Р·Р°РІС‚СЂР°Рє:");
 		for(Food j:breakfast) {
 			if(j == null) break;
 			System.out.println(j);
 			iCalories += j.calculateCalories();
 		}
-		if(bCalories) System.out.println("Общая калорийность завтрака " + iCalories + " кал");
+		if(bCalories) System.out.println("РѕР±С‰Р°СЏ РєР°Р»РѕСЂРёР№РЅРѕСЃС‚СЊ Р·Р°РІС‚СЂР°РєР° " + iCalories + " РєР°Р»");
 		System.out.flush();
 
 	}

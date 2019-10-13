@@ -6,16 +6,16 @@ public class Apple extends Food {
     private String size;
 
     public Apple(String size) {
-        super("Яблоко");
+        super("РЇР±Р»РѕРєРѕ");
         this.size = size;
     }
 
     public int calculateCalories() {
-        if (size.equals("маленькое")) {
+        if (size.equals("РјР°Р»РµРЅСЊРєРѕРµ")) {
             return 40;
-        } else if (size.equals("среднее")) {
+        } else if (size.equals("СЃСЂРµРґРЅРµРµ")) {
             return 50;
-        } else if (size.equals("большое")) {
+        } else if (size.equals("Р±РѕР»СЊС€РѕРµ")) {
             return 60;
         }
         else {
@@ -42,6 +42,6 @@ public class Apple extends Food {
     }
 
     public String toString() {
-        return super.toString() + " размера '" + size.toUpperCase() + "'"+ ", калорийность : " + calculateCalories() + " кал";
+        return super.toString() + " СЂР°Р·РјРµСЂР° '" + size.toUpperCase() + "'"+ ", РєР°Р»РѕСЂРёР№РЅРѕСЃС‚СЊ : " + calculateCalories() + " РєР°Р»";
     }
 }

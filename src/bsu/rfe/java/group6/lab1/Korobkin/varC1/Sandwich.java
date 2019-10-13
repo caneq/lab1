@@ -6,7 +6,7 @@ public class Sandwich extends Food{
     private String filling2;
 
     public Sandwich(String filling1,String filling2) {
-        super("Бутерброд");
+        super("Р‘СѓС‚РµСЂР±СЂРѕРґ");
         this.filling1 = filling1;
         this.filling2 = filling2;
     }
@@ -14,16 +14,16 @@ public class Sandwich extends Food{
     @Override
     public int calculateCalories() {
         int calories = 0;
-        if(filling1.equals("сыр")) {
+        if(filling1.equals("СЃС‹СЂ")) {
             calories += 55;
         }
-        if(filling1.equals("масло")) {
+        if(filling1.equals("РјР°СЃР»Рѕ")) {
             calories += 40;
         }
-        if(filling2.equals("ветчина")) {
+        if(filling2.equals("РІРµС‚С‡РёРЅР°")) {
             calories += 60;
         }
-        if(filling2.equals("свинина")) {
+        if(filling2.equals("СЃРІРёРЅРёРЅР°")) {
             calories += 70;
         }
 
@@ -57,7 +57,7 @@ public class Sandwich extends Food{
     }
 
     public String toString() {
-        return super.toString() + " c " + "'" + filling1.toUpperCase() + "'" + " и " + "'" + filling2.toUpperCase() + "' " 
-        		+ ", калорийность : " + calculateCalories() + " кал" ;
+        return super.toString() + " c " + "'" + filling1.toUpperCase() + "'" + " Рё " + "'" + filling2.toUpperCase() + "' " 
+        		+ ", РєР°Р»РѕСЂРёР№РЅРѕСЃС‚СЊ : " + calculateCalories() + " РєР°Р»" ;
     }
 }

@@ -3,7 +3,7 @@ package bsu.rfe.java.group6.lab1.Korobkin.varC1;
 public class ChewingGum extends Food {
     String flavour;
     public ChewingGum(String flavour){
-        super("Жевательная резинка");
+        super("Р–РµРІР°С‚РµР»СЊРЅР°СЏ СЂРµР·РёРЅРєР°");
         this.flavour = flavour;
     }
     public String getFlavour() {
@@ -13,9 +13,9 @@ public class ChewingGum extends Food {
         this.flavour = flavour;
     }
     public int calculateCalories() {
-        if (flavour.equals("мята")) return 10;
-        if (flavour.equals("арбуз")) return 11;
-        if (flavour.equals("вишня")) return 12;
+        if (flavour.equals("РјСЏС‚Р°")) return 10;
+        if (flavour.equals("Р°СЂР±СѓР·")) return 11;
+        if (flavour.equals("РІРёС€РЅСЏ")) return 12;
         return 0;
     }
     public boolean equals(Object arg0) {
@@ -24,8 +24,8 @@ public class ChewingGum extends Food {
         return this.flavour.equals(((ChewingGum)arg0).flavour);
     }
     public String toString() {
-        return super.toString() + " с привкусом \"" + flavour + "\"" + ", калорийность : "
-                + calculateCalories() + "кал" ;
+        return super.toString() + " СЃ РїСЂРёРІРєСѓСЃРѕРј \"" + flavour + "\"" + ", РєР°Р»РѕСЂРёР№РЅРѕСЃС‚СЊ : "
+                + calculateCalories() + "РєР°Р»" ;
 
     }
 }
