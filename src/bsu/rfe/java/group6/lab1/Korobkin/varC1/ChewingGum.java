@@ -2,8 +2,14 @@ package bsu.rfe.java.group6.lab1.Korobkin.varC1;
 
 public class ChewingGum extends Food {
     String flavour;
-    ChewingGum(String flavour){
+    public ChewingGum(String flavour){
         super("Жевательная резинка");
+        this.flavour = flavour;
+    }
+    public String getFlavour() {
+        return flavour;
+    }
+    public void setFlavour(String flavour) {
         this.flavour = flavour;
     }
     public int calculateCalories() {
